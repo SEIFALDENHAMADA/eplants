@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+      />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>  
+   
+
+    <title>Customer Information - ELHELALY</title>
+</head>
+
+<body class="body-contact">
+
+
+    <div class="container container-nav">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="Contact.html" style="color: #509100 ;">Customer Information</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+    <!-------Form------->
+
+    <div class="container contact-container">
+        <form id="F1">
+            <h3 class="contact-h3">PERSONAL INFO</h3>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <input id="phone" type="tel" placeholder="Mobile Number" required>
+            <div class="btn-box">
+                <button type="button" id="next">Next</button>
+            </div>
+            
+        </form>
+        <form id="F2">
+            <h3 class="contact-h3">DESCRIPTION(OPTIONAL)</h3>
+            <textarea cols="50" rows="10" placeholder="         Tap here to type a Description"></textarea>
+            <div class="btn-box">
+                <button type="button" id="back">Back</button>
+                <button type="button">Submit</button>
+            </div>
+            
+        </form>
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small id="s1">Step 1</small></div>
+            <div class="step-col"><small id="s2">Step 2</small></div>
+        </div>
+    </div>
+    <!---<div class="account-page">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span>User Informations</span>
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Username">
+                            <input id="phone" type="tel" placeholder="Enter the phone number with the country code">
+                            <input type="email" placeholder="Enter your Email">
+                            <textarea cols="50" rows="10" placeholder="Description"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>------->
+    <!----------  footer  ----------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contact Us</h3>
+                    <p>Whatsapp Account</p>
+                    <div class="app-logo">
+                        <a href="https://wa.me/201002722142"><img src="images/whatsapp-logo.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo2.png" alt="Logowebsite">
+                    <p>Our purpose is to sustainably make the pleasure and benefits of different products Accessible to
+                        Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Sections</h3>
+                    <ul>
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="">About</a></li>
+                        </ul>
+
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Copyright © 2023 - ELHELALY </p>
+        </div>
+    </div>
+    <!-------  js for toggle menu  ------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--button script-->
+<script>
+    var F1 = document.getElementById("F1");
+    var F2 = document.getElementById("F2");
+
+    var next = document.getElementById("next");
+    var back = document.getElementById("back");
+
+    var progress = document.getElementById("progress");
+
+    var s1 = document.getElementById("s1");
+    var s2 = document.getElementById("s2");
+
+
+    
+
+
+    next.onclick = function(){
+        F1.style.left = "-450px";
+        F2.style.left = "40px";
+        progress.style.width = "730px";
+        s2.style.color = "#fff"
+
+    }
+    back.onclick = function(){
+        F1.style.left = "40px";
+        F2.style.left = "450px";
+        progress.style.width = "180px";
+        s2.style.color = "#333"
+    }
+</script>
+
+</body>
+
+</html>
